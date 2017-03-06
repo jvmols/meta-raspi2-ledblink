@@ -10,10 +10,12 @@ LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR}/MIT;md5=0835ade698e0bcf8506ecda
 
 SRC_URI = "file://helloworld.c"
 
+TARGET_CC_ARCH += "${LDFLAGS}"
+
 S = "${WORKDIR}"
 
 do_compile() {
-	     ${CC} helloworld.c -o helloworld
+	     ${CC} helloworld.c -o helloworld ${LDFLAGS}
 }
 
 do_install() {
