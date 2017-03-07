@@ -40,10 +40,11 @@ int main(int argc, char **argv){
     else if (argv[1][0] == '0'){
       writeToFile(ONBOARD_LED, "0");
     }
-    else {
-      printf("Usage: %s [0|1]", argv[0]);
-    }
   }
+  else {
+    printf("Usage: %s [0|1]\n", argv[0]);
+  }
+
 
   return 0;
 }
