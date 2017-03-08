@@ -27,7 +27,7 @@ void writeToFile(char* filename, char* value){
 
 int main(int argc, char **argv){
 
-  // First arg is the program name; second is only valid if 0 or 1
+  // First arg is the program name; second is only valid if 0, 1 or 2
   if (argc == 2 && (argv[1][0] == '0' || argv[1][0] == '1' || argv[1][0] == '2')){
 
     // Remove possible trigger from led (this is needed only for onboard led0)
