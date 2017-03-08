@@ -6,4 +6,4 @@ require ../meta-raspberrypi/recipes-core/images/rpi-basic-image.bb
 
 IMAGE_INSTALL_append += " ledblink connman connman-client "
 
-export IMAGE_BASENAME = "rpi-blinkled"
+export IMAGE_BASENAME = "rpi-ledblink"
